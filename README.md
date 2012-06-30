@@ -8,4 +8,9 @@ cd ~/dotfiles
 ```
 
 ## Fixing Backspace on Mac
+
 http://fredericiana.com/2006/10/16/fixing-backspace-and-delete-for-ssh-in-os-xs-terminalapp/
+
+## Thanks
+
+Shamelessly ripped off from: https://github.com/mathiasbynens/dotfiles
