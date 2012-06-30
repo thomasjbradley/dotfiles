@@ -11,7 +11,7 @@
   si = status --ignore-submodules
   d = diff --patch-with-stat
   dt = difftool
-  p = pull
+  p = push
 
   # Pull in remote changes for the current repository and all its submodules
   pu = !"git pull; git submodule foreach git pull origin master"
