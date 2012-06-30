@@ -11,9 +11,10 @@
   si = status --ignore-submodules
   d = diff --patch-with-stat
   dt = difftool
+  p = pull
 
   # Pull in remote changes for the current repository and all its submodules
-  p = !"git pull; git submodule foreach git pull origin master"
+  pu = !"git pull; git submodule foreach git pull origin master"
 
   # Switch to a branch, creating it if necessary
   go = checkout -B
