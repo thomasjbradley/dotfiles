@@ -40,7 +40,7 @@ set convert-meta off
 "\e[3~": delete-char
 
 # if [ -t 0 ]; then
-  stty erase ^H
+#  stty erase ^H
 # fi
 
 # alias screen='screen -U'
