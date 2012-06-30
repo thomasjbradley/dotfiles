@@ -1,0 +1,20 @@
+# Use ditto to make a nice, recursive zip without resource forks
+function dzip () {
+  ditto -ck --norsrc --keepParent $1 $1.zip
+}
+
+# Make a directory, cd into it
+function md () {
+  mkdir -p "$1"
+  cd "$1"
+}
+
+# Make a tar.gz file
+function mktgz () {
+  tar -czf $1.tgz $1;
+}
+
+# Create a data URL from an image (works for other file types too, if you tweak the Content-Type afterwards)
+dataurl() {
+  echo "data:image/${1##*.};base64,$(openssl base64 -in "$1")" | tr -d '\n'
+}

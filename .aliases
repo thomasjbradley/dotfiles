@@ -1,0 +1,70 @@
+# Clear
+alias ^L=clear
+
+# Easier navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~"
+alias -- -="cd -"
+
+# Get my IP
+alias ip="curl icanhazip.com"
+
+# Shortcuts
+alias d="cd ~/Documents/Dropbox"
+alias g="git"
+alias h="hg"
+alias s="subl ."
+alias o="open"
+alias oo="open ."
+
+# List all files colorized in long format
+alias l="ls -Gl"
+
+# List all files colorized in long format, including dot files
+alias la="ls -Gla"
+
+# List only directories
+alias lsd='ls -l | grep "^d"'
+
+# Servers
+alias tw="cd /twww"
+alias twd="cd /twww/-dev"
+alias twv="cd /twww/-vhosts"
+alias tww="cd /twww/-www"
+alias twi="cd /twww/-internal"
+alias td="cd /tjbdev"
+alias tdc="cd /tjbdev/clients"
+alias tdi="cd /tjbdev/internal"
+
+alias lh="cd /Applications/MAMP/htdocs"
+
+# Flush Directory Service cache
+alias flush="dscacheutil -flushcache"
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+
+# File size
+alias fs="stat -c \"%s bytes\""
+
+# Empty the Trash on all mounted volumes and the main HDD
+# Also, clear Apple’s System Logs to improve shell startup speed
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
+
+# Hide/show all desktop icons (useful when presenting)
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+# Mercurial
+alias hgg="subl ./.hgignore"
+
+# Git
+alias gg="subl ./.gitignore"
+

@@ -1,0 +1,8 @@
+export EDITOR='subl -w'
+
+export PATH="$HOME/bin:/usr/local/share/python:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH"
+export MANPATH="$MANPATH:/opt/local/share/man"
+
+export PYTHONPATH=$PYTHONPATH:.
+
+export NODE_PATH="/usr/local/lib/node_modules"

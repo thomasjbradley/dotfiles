@@ -1,0 +1,43 @@
+[alias]
+  c = commit -m
+  com = commit
+  co = checkout
+  sm = submodule
+  nb = checkout -b
+  a = add .
+  ar = add -A
+  l = log --pretty=oneline -n 20 --graph
+  s = status -sb
+  si = status --ignore-submodules
+  d = diff --patch-with-stat
+  dt = difftool
+
+  # Pull in remote changes for the current repository and all its submodules
+  p = !"git pull; git submodule foreach git pull origin master"
+
+  # Switch to a branch, creating it if necessary
+  go = checkout -B
+
+[user]
+  name = Thomas J Bradley
+  email = theman@thomasjbradley.ca
+
+[difftool "Kaleidoscope"]
+  cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+  prompt = false
+[diff]
+  tool = Kaleidoscope
+[mergetool "sourcetree"]
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
+
+[color]
+  ui = auto
+
+[core]
+  excludesfile = ~/.gitignore
+  quotepath = false
+
+[help]
+  autocorrect = 1

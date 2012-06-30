@@ -1,0 +1,35 @@
+[ui]
+  username = Thomas J Bradley <theman@thomasjbradley.ca>
+  editor = subl -w
+  ssh = ssh -C
+
+[merge-tools]
+  filemerge.executable = ~/bin/opendiff-w
+  filemerge.args = $local $other -ancestor $base -merge $output
+
+[defaults]
+  glog = --template 'changeset:   {rev}:{node|short} {tags}\nsummary:     {desc|firstline|fill68|tabindent|tabindent}\n\n'
+
+[diff]
+  git = True
+
+[alias]
+  slog = log --template '{rev}:{node|short} {desc|firstline}\n'
+
+  [extensions]
+hgext.record =
+  hgext.fetch =
+  hgext.mq =
+  progress =
+  graphlog =
+  prompt = ~/bin/hg/prompt/prompt.py
+  hgext.bookmarks =
+  hgext.extdiff =
+  fold = ~/bin/hg/fold/fold.py
+
+[extdiff]
+  cmd.ksdiff = /usr/local/bin/ksdiff-wrapper
+  opts.ksdiff = hg
+
+[bookmarks]
+  track.current = True
