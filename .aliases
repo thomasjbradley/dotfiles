@@ -1,6 +1,3 @@
-# Clear
-alias ^L=clear
-
 # Easier navigation
 alias ..="cd .."
 alias ...="cd ../.."
@@ -13,7 +10,7 @@ alias -- -="cd -"
 alias ip="curl icanhazip.com"
 
 # Shortcuts
-alias db="cd ~/Documents/Dropbox"
+alias db="cd ~/Dropbox"
 alias g="git"
 alias h="hg"
 alias s="subl ."
