@@ -39,6 +39,9 @@ set convert-meta off
 # Make forward delete work properly
 "\e[3~": delete-char
 
+# Make ^L clear the screen
+C-L: clear-screen
+
 # if [ -t 0 ]; then
 #  stty erase ^H
 # fi
