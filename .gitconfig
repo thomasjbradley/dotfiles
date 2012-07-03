@@ -4,7 +4,8 @@
   co = checkout
   sm = submodule
   nb = checkout -b
-  a = add .
+  a = add
+  aa = add .
   ar = add -A
   l = log --pretty=oneline -n 20 --graph
   s = status -sb
