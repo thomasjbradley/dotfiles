@@ -11,6 +11,7 @@ alias ip="curl icanhazip.com"
 
 # Shortcuts
 alias db="cd ~/Dropbox"
+alias ds="cd ~/Desktop"
 alias g="git"
 alias h="hg"
 alias s="subl ."
