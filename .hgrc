@@ -15,6 +15,10 @@ git = True
 
 [alias]
 slog = log --template '{rev}:{node|short} {desc|firstline}\n'
+c = commit -m
+ar = addremove
+s = status
+p = push
 
 [extensions]
 hgext.record =
