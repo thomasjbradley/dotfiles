@@ -6,5 +6,5 @@ PWD=`pwd`
 for f in `ls -a`
 do
   case "${exclude[@]}" in  *"$f"*) continue ;; esac
-  ln -fs $PWD/$f ~/$f
+  ln -fsn $PWD/$f ~/$f
 done
