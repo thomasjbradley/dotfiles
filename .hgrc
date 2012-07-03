@@ -2,6 +2,7 @@
 username = Thomas J Bradley <theman@thomasjbradley.ca>
 editor = subl -w
 ssh = ssh -C
+ignore = ~/.hgignore
 
 [merge-tools]
 filemerge.executable = ~/bin/opendiff-w
