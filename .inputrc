@@ -41,9 +41,3 @@ set convert-meta off
 
 # Make ^L clear the screen
 C-L: clear-screen
-
-# if [ -t 0 ]; then
-#  stty erase ^H
-# fi
-
-# alias screen='screen -U'
