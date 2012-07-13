@@ -67,3 +67,6 @@ alias gg="subl ./.gitignore"
 # MAMP
 alias serve="mysql.server start && sudo apachectl -k start"
 alias unserve="mysql.server stop && sudo apachectl -k stop"
+
+# Manage Virtual Hosts
+alias vhost="subl /Users/thomasjbradley/Dropbox/Preferences/MAMP/httpd-vhosts.conf"
