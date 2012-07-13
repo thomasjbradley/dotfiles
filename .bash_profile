@@ -31,4 +31,8 @@ complete -o "nospace" -W "Finder Dock Mail Safari iTunes iCal Address\ Book Syst
 eval "$(hub alias -s)"
 
 # Set up Vi key bindings
-set -o vi
+# set -o vi
+
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
