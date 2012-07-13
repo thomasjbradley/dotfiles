@@ -34,7 +34,8 @@ alias td="cd /tjbdev"
 alias tdc="cd /tjbdev/clients"
 alias tdi="cd /tjbdev/internal"
 
-alias lh="cd /Applications/MAMP/htdocs"
+alias ld="cd ~/Dropbox/www/-dev"
+alias lv="cd ~/Dropbox/www/-vhosts"
 
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache"
@@ -63,3 +64,6 @@ alias hgg="subl ./.hgignore"
 # Git
 alias gg="subl ./.gitignore"
 
+# MAMP
+alias serve="mysql.server start && sudo apachectl -k start"
+alias unserve="mysql.server stop && sudo apachectl -k stop"
