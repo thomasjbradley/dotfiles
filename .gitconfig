@@ -18,7 +18,7 @@
   pu = !"git pull; git submodule foreach git pull origin master"
 
   # Switch to a branch, creating it if necessary
-  go = checkout -B
+  b = checkout -b
 
 [user]
   name = Thomas J Bradley
@@ -30,6 +30,9 @@
   prompt = false
 [diff]
   tool = Kaleidoscope
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
 [mergetool "sourcetree"]
   cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
   trustExitCode = true
@@ -38,7 +41,7 @@
   ui = auto
 
 [core]
-  excludesfile = ~/.gitignore
+  excludesfile = /Users/thomasjbradley/.gitignore
   quotepath = false
 
 [help]
