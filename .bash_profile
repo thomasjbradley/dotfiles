@@ -33,6 +33,8 @@ eval "$(hub alias -s)"
 # Set up Vi key bindings
 # set -o vi
 
+# Setup tab completions for homebrew
+# brew install bash-completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
