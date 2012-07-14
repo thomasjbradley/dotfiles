@@ -34,8 +34,9 @@ alias td="cd /tjbdev"
 alias tdc="cd /tjbdev/clients"
 alias tdi="cd /tjbdev/internal"
 
-alias ld="cd ~/Dropbox/www/-dev"
-alias lv="cd ~/Dropbox/www/-vhosts"
+alias lw="cd /www"
+alias ld="cd /dwww"
+alias lv="cd /vwww"
 
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache"
@@ -44,7 +45,7 @@ alias flush="dscacheutil -flushcache"
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 # File size
-alias fs="stat -c \"%s bytes\""
+alias fs="stat -f \"%z bytes\""
 
 # Empty the Trash on all mounted volumes and the main HDD
 # Also, clear Apple’s System Logs to improve shell startup speed
