@@ -7,7 +7,7 @@
   a = add
   aa = add .
   ar = add -A
-  l = log --pretty=oneline -n 20 --graph
+  l = log --format='%Cgreen%h%Creset %C(cyan)%an%Creset - %s' --graph
   s = status -sb
   si = status --ignore-submodules
   d = diff --patch-with-stat
