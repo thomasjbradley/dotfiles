@@ -41,3 +41,9 @@ Remember your backup http.conf file
 
 	sudo apachectl start
 	sudo apachectl stop
+
+---
+
+## Other methods
+
+- http://php-osx.liip.ch/
