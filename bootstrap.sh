@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-exclude=(".", "..", ".git", "bootstrap.sh", "README.md")
+exclude=(".", "..", ".git", "bootstrap.sh", "README.md", "mamp.md")
 PWD=`pwd`
 
 for f in `ls -a`
