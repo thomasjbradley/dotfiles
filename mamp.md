@@ -27,6 +27,8 @@
 	brew tap josegonzalez/homebrew-php
 	brew install php54 --with-mysql
 
+**PHP will require X11 on Mountain Lion: <http://xquartz.macosforge.org/landing/>**
+
 ## Apache
 
 Remember your backup http.conf file
