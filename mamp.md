@@ -24,6 +24,7 @@
 
 <https://github.com/josegonzalez/homebrew-php>
 
+	brew tap homebrew/dupes
 	brew tap josegonzalez/homebrew-php
 	brew install php54 --with-mysql
 
