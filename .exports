@@ -1,8 +1,16 @@
 export EDITOR='subl -w'
 
-export PATH="$HOME/bin:/usr/local/share/python:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$PATH"
-export MANPATH="$MANPATH:/opt/local/share/man"
+PATH="$(brew --prefix coreutils)/libexec/gnubin"
+PATH=$HOME/bin
+PATH=$PATH:/usr/local/share/python
+PATH=$PATH:/usr/local/bin
+PATH=$PATH:/usr/local/sbin
+PATH=$PATH:/usr/local/share/npm/bin
+
+export PATH
+
+export MANPATH=$MANPATH:/opt/local/share/man
 
 export PYTHONPATH=$PYTHONPATH:.
 
-export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
+export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
