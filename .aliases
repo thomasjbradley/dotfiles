@@ -72,3 +72,6 @@ alias unserve="mysql.server stop && sudo apachectl -k stop"
 
 # Manage Virtual Hosts
 alias vhost="subl /Users/thomasjbradley/Dropbox/Preferences/MAMP/httpd-vhosts.conf /etc/hosts"
+
+# Get my local IP
+alias localip="ipconfig getifaddr en1"
