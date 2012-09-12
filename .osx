@@ -8,6 +8,7 @@
 scutil --set ComputerName "aluminum-falcon"
 scutil --set HostName "aluminum-falcon"
 scutil --set LocalHostName "aluminum-falcon"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "aluminum-falcon"
 
 # Menu bar: disable transparency
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
