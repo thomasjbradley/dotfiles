@@ -1,11 +1,13 @@
 export EDITOR='subl -w'
 
+OLDPATH=$PATH
 PATH="$(brew --prefix coreutils)/libexec/gnubin"
 PATH=$HOME/bin
 PATH=$PATH:/usr/local/share/python
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:/usr/local/sbin
 PATH=$PATH:/usr/local/share/npm/bin
+PATH=$PATH:$OLDPATH
 
 export PATH
 
