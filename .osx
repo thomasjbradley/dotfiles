@@ -231,7 +231,7 @@ defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
 defaults write com.apple.terminal StringEncodings -array 4
 
 # Change speed of iTerm 2 hot key window animation
-defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration - float 0.05
+defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -float 0.05
 
 ###############################################################################
 # Kill affected applications                                                  #
