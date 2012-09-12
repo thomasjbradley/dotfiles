@@ -75,3 +75,11 @@ alias vhost="subl /Users/thomasjbradley/Dropbox/Preferences/MAMP/httpd-vhosts.co
 
 # Get my local IP
 alias localip="ipconfig getifaddr en1"
+
+# Some tree shortcuts to see only certain depths
+alias l1="tree --dirsfirst -ChFL 1"
+alias l2="tree --dirsfirst -ChFL 2"
+alias l3="tree --dirsfirst -ChFL 3"
+alias l4="tree --dirsfirst -ChFL 4"
+alias l5="tree --dirsfirst -ChFL 5"
+alias l6="tree --dirsfirst -ChFL 6"
