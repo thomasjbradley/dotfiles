@@ -2,6 +2,7 @@
   c = commit -m
   com = commit
   co = checkout
+  cl = clone
   b = branch
   nb = checkout -b
   a = add
