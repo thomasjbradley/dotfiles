@@ -26,9 +26,12 @@
 
 	brew tap homebrew/dupes
 	brew tap josegonzalez/homebrew-php
-	brew install php54 --with-mysql
+	brew install zlib freetype jpeg libpng gd gettext mcrypt
+	brew install php54 --with-mysql --with-fpm --without-apache
 
 **PHP will require X11 on Mountain Lion: <http://xquartz.macosforge.org/landing/>**
+
+<http://blog.lylyn.com/?p=37>
 
 ## Apache
 
