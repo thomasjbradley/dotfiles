@@ -6,14 +6,14 @@ PWD=`pwd`
 for f in `ls -a`
 do
   case "${exclude[@]}" in  *"$f"*) continue ;; esac
-  ln -fsn $PWD/$f ~/$f
+  ln -sfn $PWD/$f ~/$f
 done
 
 # Set up some commonly used aliases
-ln -s $HOME/Dropbox/ /db
-ln -s $HOME/Dropbox/www /db/www
-ln -s $HOME/Dropbox/twww /db/www/-tmp
-ln -s $HOME/Dropbox/dwww /db/www/-dev
-ln -s $HOME/Dropbox/vwww /db/www/-vwww
-ln -s $HOME/Dropbox/tjb-dev /db/tjb-dev
-ln -s /Applications/MAMP/htdocs /mamp
+ln -sfn ~/Dropbox /db
+ln -sfn ~/Dropbox/www /www
+ln -sfn ~/Dropbox/www/-tmp /twww
+ln -sfn ~/Dropbox/www/-dev /dwww
+ln -sfn ~/Dropbox/www/-vhosts /vwww
+ln -sfn ~/Dropbox/tjb-dev /tjb-dev
+ln -sfn /Applications/MAMP/htdocs /mamp
