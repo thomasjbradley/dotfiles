@@ -1,5 +1,11 @@
 # Installing MAMP with Homebrew
 
+- Run `bootstrap.sh` first to create the needed symlinks
+- Make sure Dropbox has the correct permissions
+
+		chmod -R +x ~/Dropbox
+- Double check the etc/hosts file for the right virtual host names
+
 ## MySQL
 
 <http://ratvars.com/operating-systems/mac/how-to-install-apache-php-and-mysql-stack-on-macos-lion/>
@@ -26,9 +32,12 @@
 
 	brew tap homebrew/dupes
 	brew tap josegonzalez/homebrew-php
+	brew install zlib freetype jpeg libpng gd gettext mcrypt
 	brew install php54 --with-mysql
 
 **PHP will require X11 on Mountain Lion: <http://xquartz.macosforge.org/landing/>**
+
+<http://blog.lylyn.com/?p=37>
 
 ## Apache
 
