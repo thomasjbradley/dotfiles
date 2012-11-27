@@ -7,7 +7,7 @@
   <symbol_map type="KeyCode" name="KEY_PERIOD" value="0x2f" />
 
   <item>
-    <name>Remap capslock to Hyper</name>
+    <name>Remap F19 to Hyper</name>
     <appendix>OS X doesn't have a Hyper. This maps F19 (80) to Control + Option + Command.</appendix>
     <identifier>private.capslock_to_hyper</identifier>
 
