@@ -3,10 +3,11 @@ username = Thomas J Bradley <theman@thomasjbradley.ca>
 editor = subl -w
 ssh = ssh -C
 ignore = ~/.hgignore
+merge = Kaleidoscope
 
 [merge-tools]
-filemerge.executable = ~/bin/opendiff-w
-filemerge.args = $local $other -ancestor $base -merge $output
+Kaleidoscope.executable = /usr/local/bin/ksdiff
+Kaleidoscope.args = --merge --output $output --base $base -- $local $other
 
 [defaults]
 glog = --template 'changeset:   {rev}:{node|short} {tags}\nsummary:     {desc|firstline|fill68|tabindent|tabindent}\n\n'
@@ -33,8 +34,8 @@ hgext.extdiff =
 fold = ~/bin/hg/fold/fold.py
 
 [extdiff]
-cmd.ksdiff = /usr/local/bin/ksdiff-wrapper
-opts.ksdiff = hg
+cmd.ksdiff = /usr/local/bin/ksdiff
+opts.ksdiff = --changeset --wait --filelist
 
 [bookmarks]
 track.current = True

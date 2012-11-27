@@ -26,7 +26,7 @@
   email = theman@thomasjbradley.ca
 
 [difftool "Kaleidoscope"]
-  cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
   prompt = false
 [diff]
@@ -48,4 +48,10 @@
 [help]
   autocorrect = 1
 [push]
-	default = simple
+  default = simple
+[mergetool "Kaleidoscope"]
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+[mergetool]
+  prompt = false
+[merge]
+  tool = Kaleidoscope
