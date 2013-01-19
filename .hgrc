@@ -28,10 +28,10 @@ hgext.fetch =
 hgext.mq =
 progress =
 graphlog =
-prompt = ~/bin/hg/prompt/prompt.py
+#prompt = ~/bin/hg/prompt/prompt.py
 hgext.bookmarks =
 hgext.extdiff =
-fold = ~/bin/hg/fold/fold.py
+#fold = ~/bin/hg/fold/fold.py
 
 [extdiff]
 cmd.ksdiff = /usr/local/bin/ksdiff
