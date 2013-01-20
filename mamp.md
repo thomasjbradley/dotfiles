@@ -4,7 +4,8 @@
 - Make sure Dropbox has the correct permissions
 
 		chmod -R +x ~/Dropbox
-- Double check the etc/hosts file for the right virtual host names
+
+- Run `vhost-setup.sh` to install dsnmasq and setup local DNS server
 
 ## MySQL
 
