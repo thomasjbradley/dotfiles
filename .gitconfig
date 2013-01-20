@@ -17,6 +17,7 @@
   t = tag
   pt = push --tags
   sm = submodule
+  m = merge
 
   # Pull in remote changes for the current repository and all its submodules
   pu = !"git pull; git submodule foreach git pull origin master"
