@@ -22,9 +22,6 @@ done
 # Set up some commonly used aliases
 ln -sfn ~/Dropbox /db
 ln -sfn ~/Dropbox/www /www
-ln -sfn ~/Dropbox/www/-tmp /twww
-ln -sfn ~/Dropbox/www/-dev /dwww
-ln -sfn ~/Dropbox/www/-vhosts /vwww
 ln -sfn ~/Dropbox/tjb-dev /tjb-dev
 ln -sfn /Applications/MAMP/htdocs /mamp
 
