@@ -48,6 +48,11 @@ for f in $(command ls ~/.node-completion); do
 done
 # }}}
 
+# Set up git completions
+if [ -f ~/dotfiles/.git-completion ]; then
+  . ~/dotfiles/.git-completion
+fi
+
 # Use Git’s colored diff when available
 hash git &>/dev/null
 if [ $? -eq 0 ]; then
