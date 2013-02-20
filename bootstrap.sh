@@ -9,6 +9,7 @@ exclude=("."
   , ".brew"
   , "keyremap-private.xml"
   , "keyremap-user.xml"
+  , "vhost-setup.sh"
 )
 
 PWD=`pwd`
