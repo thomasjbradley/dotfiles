@@ -45,6 +45,11 @@ function gz () {
   gzip -c "$1" | wc -c
 }
 
+# Base64 image to clipboard
+function b64copy () {
+  cat "$1" | openssl base64 | tr -d '\n' | pbcopy
+}
+
 # Lists all the functions in this file
 function list () {
   grep 'function ' ~/.functions | cut -d ' ' -f 2
