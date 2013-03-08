@@ -21,6 +21,7 @@ c = commit -m
 ar = addremove
 s = status
 p = push
+dt = ksdiff
 
 [extensions]
 hgext.record =
