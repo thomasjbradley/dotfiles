@@ -21,6 +21,7 @@ do
 done
 
 # Set up some commonly used aliases
+ln -sfn ~/Desktop /ds
 ln -sfn ~/Dropbox /db
 ln -sfn ~/Dropbox/www /www
 ln -sfn ~/Dropbox/tjb-dev /tjb-dev
