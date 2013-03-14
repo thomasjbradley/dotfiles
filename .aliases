@@ -17,7 +17,6 @@ alias ods="open ~/Desktop"
 alias g="git"
 alias h="hg"
 alias s="subl"
-alias ss="subl ."
 alias o="open"
 alias oo="open ."
 

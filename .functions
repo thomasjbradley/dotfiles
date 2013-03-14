@@ -1,3 +1,8 @@
+# Lists all the functions in this file
+function functions () {
+  grep 'function ' ~/.functions | cut -d ' ' -f 2
+}
+
 # Use ditto to make a nice, recursive zip without resource forks
 function dzip () {
   ditto -ck --norsrc --keepParent $1 $1.zip
@@ -50,7 +55,13 @@ function b64copy () {
   cat "$1" | openssl base64 | tr -d '\n' | pbcopy
 }
 
-# Lists all the functions in this file
-function functions () {
-  grep 'function ' ~/.functions | cut -d ' ' -f 2
+# Opens the Sublime project in the current folder or defaults to just the folder
+function ss () {
+  PROJ=`find . -name **.sublime-project | awk 'NR==1'`
+
+  if [ -z "$PROJ" ]; then
+    subl .
+  else
+    subl $PROJ
+  fi
 }
