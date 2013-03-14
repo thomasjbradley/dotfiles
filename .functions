@@ -51,6 +51,6 @@ function b64copy () {
 }
 
 # Lists all the functions in this file
-function list () {
+function functions () {
   grep 'function ' ~/.functions | cut -d ' ' -f 2
 }
