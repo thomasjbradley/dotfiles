@@ -60,3 +60,6 @@ if [ $? -eq 0 ]; then
     git diff --no-index --color-words "$@"
   }
 fi
+
+# Set up grunt completions
+eval "$(grunt --completion=bash)"
