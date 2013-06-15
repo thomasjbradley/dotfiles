@@ -60,3 +60,4 @@ Remember your backup http.conf file
 ## Other methods
 
 - http://php-osx.liip.ch/
+- https://github.com/humanmade/hm-dev/wiki/Setup-a-local-dev-environment-on-Mac-OSX-Lion
