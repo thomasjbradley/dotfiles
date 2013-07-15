@@ -57,7 +57,7 @@ function b64copy () {
 
 # Opens the Sublime project in the current folder or defaults to just the folder
 function ss () {
-  PROJ=`find . -name **.sublime-project | awk 'NR==1'`
+  PROJ=`find . -name ./*.sublime-project | awk 'NR==1'`
 
   if [ -z "$PROJ" ]; then
     subl .
