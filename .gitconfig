@@ -29,7 +29,7 @@
 
 [user]
   name = Thomas J Bradley
-  email = theman@thomasjbradley.ca
+  email = hey@thomasjbradley.ca
 
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
