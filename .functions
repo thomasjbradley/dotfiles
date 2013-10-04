@@ -23,11 +23,6 @@ function dataurl () {
   echo "data:image/${1##*.};base64,$(openssl base64 -in "$1")" | tr -d '\n'
 }
 
-# Display my IP address
-function myip () {
-  curl icanhazip.com
-}
-
 # Determine size of a file or total size of a directory
 function fs () {
   if du -b /dev/null > /dev/null 2>&1; then
