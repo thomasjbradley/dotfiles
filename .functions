@@ -67,11 +67,16 @@ function ss () {
 }
 
 # Install a grunt plugin and save to devDependencies
-function gi() {
+function gi () {
   npm install --save-dev grunt-"$@"
 }
 
 # Install a grunt-contrib plugin and save to devDependencies
-function gci() {
+function gci () {
   npm install --save-dev grunt-contrib-"$@"
+}
+
+# Hide errors for npm ls
+function npmls () {
+  npm ls --depth=0 $@ 2>/dev/null
 }
