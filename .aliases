@@ -68,6 +68,9 @@ alias gg="subl ./.gitignore"
 alias serve="mysql.server start && sudo apachectl -k start"
 alias unserve="mysql.server stop && sudo apachectl -k stop"
 
+# Python SimpleHTTPServer
+alias pyserve="python -m SimpleHTTPServer"
+
 # Manage Virtual Hosts
 alias vhost="subl /Users/thomasjbradley/Dropbox/Preferences/MAMP/httpd-vhosts.conf /etc/hosts"
 alias vhosts="vhost"
