@@ -2,6 +2,7 @@
 
 exclude=("."
   , ".."
+  , ".DS_Store"
   , ".git"
   , "bootstrap.sh"
   , "README.md"
