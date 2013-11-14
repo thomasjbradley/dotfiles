@@ -5,7 +5,7 @@ exclude=(
   "..",
   ".DS_Store",
   ".git",
-  "bootstrap.sh",
+  "install.sh",
   "README.md",
   "mamp.md",
   "keyremap-private.xml",
