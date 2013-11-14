@@ -1,0 +1,17 @@
+# https://github.com/addyosmani/dotfiles/blob/master/.aliases
+# https://github.com/addyosmani/dotfiles/blob/master/.functions
+#
+alias safari="open -a safari"
+alias firefox="open -a firefox"
+alias opera="open -a opera"
+alias chrome="open -a google\ chrome"
+alias chromium="open -a chromium"
+
+# Launch installed browsers for a specific URL
+# Usage: browsers "http://www.google.com"
+function browsers() {
+  chrome $1
+  opera $1
+  firefox $1
+  safari $1
+}

@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
 
-exclude=("."
-  , ".."
-  , ".DS_Store"
-  , ".git"
-  , "bootstrap.sh"
-  , "README.md"
-  , "mamp.md"
-  , ".brew"
-  , "keyremap-private.xml"
-  , "keyremap-user.xml"
-  , "vhost-setup.sh"
+exclude=(
+  ".",
+  "..",
+  ".DS_Store",
+  ".git",
+  "bootstrap.sh",
+  "README.md",
+  "mamp.md",
+  "keyremap-private.xml",
+  "keyremap-user.xml",
+  "vhost-setup.sh",
+  ".brew"
 )
 
 PWD=`pwd`

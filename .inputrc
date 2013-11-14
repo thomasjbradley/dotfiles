@@ -39,5 +39,8 @@ set convert-meta off
 # Make forward delete work properly
 "\e[3~": delete-char
 
+# Use Alt/Meta + Delete to delete the preceding word
+"\e[3;3~": kill-word
+
 # Make ^L clear the screen
 C-L: clear-screen

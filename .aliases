@@ -10,10 +10,6 @@ alias -- -="cd -"
 alias ip="curl icanhazip.com"
 
 # Shortcuts
-alias db="cd ~/Dropbox"
-alias odb="open ~/Dropbox"
-alias ds="cd ~/Desktop"
-alias ods="open ~/Desktop"
 alias g="git"
 alias h="hg"
 alias s="subl"
@@ -25,20 +21,6 @@ alias l="ls -Gla"
 
 # List only directories
 alias lsd='ls -l | grep "^d"'
-
-# Servers
-alias tw="cd /twww"
-alias twd="cd /twww/-dev"
-alias twv="cd /twww/-vhosts"
-alias tww="cd /twww/-www"
-alias twi="cd /twww/-internal"
-alias td="cd /tjbdev"
-alias tdc="cd /tjbdev/clients"
-alias tdi="cd /tjbdev/internal"
-
-alias lw="cd /www"
-alias ld="cd /dwww"
-alias lv="cd /vwww"
 
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache"
@@ -65,11 +47,8 @@ alias hgg="subl ./.hgignore"
 alias gg="subl ./.gitignore"
 
 # MAMP
-alias serve="mysql.server start && sudo apachectl -k start"
-alias unserve="mysql.server stop && sudo apachectl -k stop"
-
-# Python SimpleHTTPServer
-alias pyserve="python -m SimpleHTTPServer"
+alias mamp="mysql.server start && sudo apachectl -k start"
+alias unmamp="mysql.server stop && sudo apachectl -k stop"
 
 # Manage Virtual Hosts
 alias vhost="subl /Users/thomasjbradley/Dropbox/Preferences/MAMP/httpd-vhosts.conf /etc/hosts"
@@ -85,3 +64,14 @@ alias l3="tree --dirsfirst -ChFL 3"
 alias l4="tree --dirsfirst -ChFL 4"
 alias l5="tree --dirsfirst -ChFL 5"
 alias l6="tree --dirsfirst -ChFL 6"
+
+# npm
+alias npmp="sudo npm publish"
+alias npma="sudo npm adduser"
+alias npmi="sudo npm install"
+alias npmg="sudo npm install -g"
+alias npmu="sudo npm update"
+alias npmr="sudo npm uninstall"
+alias npmrg="sudo npm uninstall -g"
+
+source ~/.aliases-locations

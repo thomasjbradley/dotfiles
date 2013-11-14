@@ -29,30 +29,39 @@
   # Push all branches and set them as upstream tracking
   pa = push --all origin -u
 
+[apply]
+  whitespace = fix
+
 [user]
   name = Thomas J Bradley
   email = hey@thomasjbradley.ca
 
 [difftool "Kaleidoscope"]
   cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
 [difftool]
   prompt = false
+
 [diff]
   tool = Kaleidoscope
+
 [mergetool "Kaleidoscope"]
   cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
   trustExitCode = true
+
 [mergetool]
   prompt = false
+
 [merge]
   tool = Kaleidoscope
 
 [color]
-  ui = auto
+  ui = always
 
 [core]
   excludesfile = /Users/thomasjbradley/.gitignore
   quotepath = false
+  attributesfile = ~/.gitattributes
 
 [help]
   autocorrect = 1

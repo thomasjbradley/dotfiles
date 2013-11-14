@@ -1,0 +1,23 @@
+# Directories
+alias db="cd ~/Dropbox"
+alias odb="open ~/Dropbox"
+alias ds="cd ~/Desktop"
+alias ods="open ~/Desktop"
+
+# Servers
+alias tw="cd /twww"
+alias twd="cd /twww/-dev"
+alias twv="cd /twww/-vhosts"
+alias tww="cd /twww/-www"
+alias twi="cd /twww/-internal"
+alias td="cd /tjbdev"
+alias tdc="cd /tjbdev/clients"
+alias tdi="cd /tjbdev/internal"
+
+alias lw="cd /www"
+alias ld="cd /dwww"
+alias lv="cd /vwww"
+
+# GitHub
+alias gh="open -a google\ chrome 'http://github.com/thomasjbradley'"
+alias ghac="open -a google\ chrome 'http://github.com/algonquindesign'"
