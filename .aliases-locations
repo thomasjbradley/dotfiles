@@ -3,6 +3,7 @@ alias db="cd ~/Dropbox"
 alias odb="open ~/Dropbox"
 alias ds="cd ~/Desktop"
 alias ods="open ~/Desktop"
+alias sp="open ~/Dropbox/Preferences/Sublime\ Text\ 3/Packages"
 
 # Servers
 alias tw="cd /twww"
