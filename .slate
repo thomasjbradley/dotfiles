@@ -35,10 +35,8 @@ bind =:${hyper} ${full}
 bind =:${shift-hyper} ${full-right}
 bind -:${hyper} sequence ${three-quarters} > ${centerX} > ${centerY}
 bind -:${shift-hyper} sequence ${three-quarters-full} > ${centerX}
-bind [:${hyper} ${top-left-half}
-bind ]:${hyper} ${top-right-half}
-bind [:${shift-hyper} ${left-half}
-bind ]:${shift-hyper} ${right-half}
+bind [:${hyper} ${left-half}
+bind ]:${hyper} ${right-half}
 bind right:${hyper} throw right
 bind right:${shift-hyper} throw right resize
 bind left:${hyper} throw left
