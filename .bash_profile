@@ -63,3 +63,6 @@ fi
 
 # Set up grunt completions
 eval "$(grunt --completion=bash)"
+
+# Set up direnv - directory custom env vars
+eval "$(direnv hook bash)"
