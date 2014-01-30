@@ -11,6 +11,8 @@ PATH=$PATH:$OLDPATH
 
 export PATH
 
+export CDPATH=".:/www:/ds"
+
 export MANPATH=$MANPATH:/opt/local/share/man
 
 export PYTHONPATH=$PYTHONPATH:.
