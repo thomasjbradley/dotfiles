@@ -77,7 +77,7 @@ function gci () {
 }
 
 # take this repo and copy it to somewhere else minus the .git stuff.
-function gitexport(){
+function gitexport () {
   mkdir -p "$1"
   git archive master | tar -x -C "$1"
 }
@@ -88,7 +88,7 @@ function npmls () {
 }
 
 # Start an HTTP server from a directory, optionally specifying the port
-function server() {
+function server () {
   local port="${1:-8000}"
   # open "http://localhost:${port}/"
   # Set the default Content-Type to `text/plain` instead of `application/octet-stream`
