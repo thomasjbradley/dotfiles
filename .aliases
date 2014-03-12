@@ -78,4 +78,7 @@ alias npmrg="sudo npm uninstall -g"
 # http://rtyley.github.io/bfg-repo-cleaner/
 alias bfg="java -jar /db/bin/bfg-1.11.1.jar"
 
+# Brew fix local overwrite issues
+alias brewfix="cd `brew --prefix` && git reset --hard FETCH_HEAD && cd -"
+
 source ~/.aliases-locations
