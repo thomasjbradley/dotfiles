@@ -59,7 +59,7 @@
   ui = always
 
 [core]
-  excludesfile = /Users/thomasjbradley/.gitignore
+  excludesfile = ~/.gitignore
   quotepath = false
   attributesfile = ~/.gitattributes
 
