@@ -18,3 +18,5 @@ export MANPATH=$MANPATH:/opt/local/share/man
 export PYTHONPATH=$PYTHONPATH:.
 
 export NODE_PATH=/usr/local/lib/node_modules:/usr/local/share/npm/lib/node_modules:$NODE_PATH
+
+export DOCKER_HOST=tcp://127.0.0.1:4243
