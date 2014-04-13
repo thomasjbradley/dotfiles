@@ -23,6 +23,7 @@
   amend = commit --amend -C HEAD
   undo = reset --soft HEAD^
   r = rebase -i
+  cp = cherry-pick
 
   # Pull in remote changes for the current repository and all its submodules
   pusm = !"git pull; git submodule foreach git pull origin master"
@@ -70,5 +71,5 @@
   default = simple
 
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
