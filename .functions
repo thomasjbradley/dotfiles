@@ -76,10 +76,16 @@ function gci () {
   npm install --save-dev grunt-contrib-"$@"
 }
 
-# take this repo and copy it to somewhere else minus the .git stuff.
+# Take this repo and copy it to somewhere else minus the .git stuff.
 function gitexport () {
   mkdir -p "$1"
   git archive master | tar -x -C "$1"
+}
+
+# Clean this repo after running BFG
+function gitclean () {
+  git reflog expire --expire=now --all
+  git gc --prune=now --aggressive
 }
 
 # Hide errors for npm ls
