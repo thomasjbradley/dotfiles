@@ -66,3 +66,5 @@ eval "$(grunt --completion=bash)"
 
 # Set up direnv - directory custom env vars
 eval "$(direnv hook bash)"
+
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
