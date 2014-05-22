@@ -51,7 +51,7 @@ alias mamp="mysql.server start && sudo apachectl -k start"
 alias unmamp="mysql.server stop && sudo apachectl -k stop"
 
 # Manage Virtual Hosts
-alias vhost="subl /Users/thomasjbradley/Dropbox/Preferences/MAMP/httpd-vhosts.conf /etc/hosts"
+alias vhost="subl ~/Dropbox/Preferences/MAMP/httpd-vhosts.conf /etc/hosts"
 alias vhosts="vhost"
 
 # Get my local IP
@@ -80,5 +80,9 @@ alias bfg="java -jar /db/bin/bfg-1.11.1.jar"
 
 # Brew fix local overwrite issues
 alias brewfix="cd `brew --prefix` && git reset --hard FETCH_HEAD && cd -"
+
+# t To-do lists in the command line
+# https://bitbucket.org/sjl/t/
+alias t='python ~/bin/t/t.py --task-dir ~/Dropbox/Tasks --list tasks'
 
 source ~/.aliases-locations
