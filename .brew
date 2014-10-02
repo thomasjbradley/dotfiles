@@ -20,7 +20,6 @@ brew install wget --enable-iri
 # Install more recent versions of some OS X tools
 brew tap homebrew/dupes
 brew install homebrew/dupes/grep
-brew tap josegonzalez/homebrew-php
 
 # Brew Cask
 # https://github.com/phinze/homebrew-cask
@@ -38,7 +37,10 @@ brew install rename
 # brew install rhino
 brew install tree
 # brew install webkit2png
-# brew install php54
+
+# Tap and install PHP
+brew tap josegonzalez/homebrew-php
+# brew install php55
 
 # direnv - environment variables per directory
 brew install direnv
