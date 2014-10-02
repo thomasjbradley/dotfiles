@@ -19,24 +19,22 @@ brew install wget --enable-iri
 
 # Install more recent versions of some OS X tools
 brew tap homebrew/dupes
-brew install homebrew/dupes/grep
-
-# Brew Cask
-# https://github.com/phinze/homebrew-cask
-brew tap phinze/homebrew-cask
-brew install brew-cask
+# brew install homebrew/dupes/grep
 
 # Install everything else
 brew install ack
 #brew install exiv2
 brew install git
-#brew install imagemagick
 brew install lynx
 brew install node
 brew install rename
 # brew install rhino
 brew install tree
 # brew install webkit2png
+brew install hub
+brew install imagemagick
+brew install graphicsmagick
+brew install zopfli
 
 # Tap and install PHP
 brew tap josegonzalez/homebrew-php
@@ -45,9 +43,69 @@ brew tap josegonzalez/homebrew-php
 # direnv - environment variables per directory
 brew install direnv
 
-# QuickLook plugins
-# https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package && qlmanage -r
+# Brew Cask
+brew tap phinze/homebrew-cask
+brew install brew-cask
+
+# Brew Cask Apps
+apps=(
+  alfred
+  appcleaner
+  color-oracle
+  commandq
+  dropbox
+  dterm
+  firefox
+  flash
+  google-chrome
+  hazel
+  imagealpha
+  imageoptim
+  istat-menus
+  iterm2
+  kaleidoscope
+  karabiner
+  marked
+  nvalt
+  onyx
+  seil
+  shiori
+  slate
+  sublime-text3
+
+  # paparazzi
+  # sequel-pro
+
+  # transmit
+  # soulver
+  # screenflick
+  # vagrant
+  # arq
+
+  # QuickLook plugins
+  betterzipql
+  qlcolorcode
+  qlmarkdown
+  qlprettypatch
+  qlstephen
+  quicklook-csv
+  quicklook-json
+  suspicious-package
+  webp-quicklook
+)
+
+echo "installing apps..."
+brew cask install ${apps[@]}
+brew cask alfred link
+
+# Install fonts with Brew Cask
+brew tap caskroom/fonts
+
+fonts=(
+)
+
+echo "installing fonts..."
+brew cask install ${fonts[@]}
 
 # Remove outdated versions from the cellar
 brew cleanup
