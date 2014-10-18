@@ -81,8 +81,7 @@ alias bfg="java -jar /db/bin/bfg-1.11.1.jar"
 # Brew fix local overwrite issues
 alias brewfix="cd `brew --prefix` && git reset --hard FETCH_HEAD && cd -"
 
-# t To-do lists in the command line
-# https://bitbucket.org/sjl/t/
-alias t='python ~/bin/t/t.py --task-dir ~/Dropbox/Tasks --list tasks'
+# For NodeWebkit
+alias nw="~/bin/node-webkit/node-webkit.app/Contents/MacOS/node-webkit"
 
 source ~/.aliases-locations
