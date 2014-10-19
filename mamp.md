@@ -1,6 +1,6 @@
 # Installing MAMP with Homebrew
 
-- Run `bootstrap.sh` first to create the needed symlinks
+- Run `install.sh` first to create the needed symlinks
 - Make sure Dropbox has the correct permissions
 
 		chmod -R +x ~/Dropbox
