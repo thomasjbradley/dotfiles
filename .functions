@@ -109,7 +109,7 @@ function epub() {
 }
 
 # https://gist.github.com/SlexAxton/4989674/
-gifify() {
+movtogif() {
   if [[ -n "$1" ]]; then
     if [[ $2 == '--good' ]]; then
       ffmpeg -i $1 -r 10 -vcodec png out-static-%05d.png
