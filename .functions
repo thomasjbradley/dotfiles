@@ -108,8 +108,9 @@ function epub() {
    zip -q0X $@ mimetype; zip -qXr9D $@ *
 }
 
+# Takes a .mov file and converts it to an animated GIF
 # https://gist.github.com/SlexAxton/4989674/
-movtogif() {
+function movtogif() {
   if [[ -n "$1" ]]; then
     if [[ $2 == '--good' ]]; then
       ffmpeg -i $1 -r 10 -vcodec png out-static-%05d.png
@@ -119,7 +120,16 @@ movtogif() {
       ffmpeg -i $1 -s 600x400 -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=3 --delay=3 > $1.gif
     fi
   else
-    echo "proper usage: gifify <input_movie.mov>. You DO need to include extension."
+    echo "Proper usage: movtogif <input_movie.mov>. You need to include extension."
+  fi
+}
+
+# Takes a selection of images and converts them into an animated GIF
+function foldertogif() {
+  if [[ -n "$1" ]]; then
+    convert -delay 20 -loop 0 $1 animated-images.gif
+  else
+    echo "Proper usage: foldertogif <*.jpg>."
   fi
 }
 
