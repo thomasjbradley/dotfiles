@@ -124,15 +124,6 @@ function movtogif() {
   fi
 }
 
-# Takes a selection of images and converts them into an animated GIF
-function foldertogif() {
-  if [[ -n "$1" ]]; then
-    convert -delay 20 -loop 0 $1 animated-images.gif
-  else
-    echo "Proper usage: foldertogif <*.jpg>."
-  fi
-}
-
 # Get separate function files
 source ~/.functions-browsers
 source ~/.functions-browserstack
