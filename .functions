@@ -124,6 +124,11 @@ function movtogif() {
   fi
 }
 
+# Create the sha256sum checksum function
+function sha256sum() {
+  openssl sha256 "$@" | awk '{print $2}';
+}
+
 # Get separate function files
 source ~/.functions-browsers
 source ~/.functions-browserstack
