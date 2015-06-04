@@ -22,7 +22,7 @@
   m = merge
   mt = mergetool
   amend = commit --amend -C HEAD
-  undo = reset --soft HEAD^
+  undo = reset --soft HEAD~1
   r = rebase -i
   cp = cherry-pick
 
@@ -72,14 +72,14 @@
   default = simple
 
 [filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
 [filter "hawser"]
-	clean = git hawser clean %f
-	smudge = git hawser smudge %f
-	required = true
+  clean = git hawser clean %f
+  smudge = git hawser smudge %f
+  required = true
 [filter "lfs"]
-	clean = git lfs clean %f
-	smudge = git lfs smudge %f
-	required = true
+  clean = git lfs clean %f
+  smudge = git lfs smudge %f
+  required = true
