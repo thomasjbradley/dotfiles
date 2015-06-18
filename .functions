@@ -66,11 +66,6 @@ function ss () {
   fi
 }
 
-# Opens ImageOptim and runs it on all PNGs, JPGs and GIFs in the current folder
-function io () {
-  open -a ImageOptim **/*.jpg **/*.png **/*.gif
-}
-
 # Install a grunt plugin and save to devDependencies
 function gi () {
   npm install --save-dev grunt-"$@"
