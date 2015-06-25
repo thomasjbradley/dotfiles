@@ -124,15 +124,27 @@ function movtogif() {
   fi
 }
 
+# Takes two screenshots: 320px & 600px
+function mobile-screens () {
+  EXT=${3:-jpg}
+
+  phantomjs ~/bin/rasterize.js "$1" "$2-320.$EXT" "320px"
+  phantomjs ~/bin/rasterize.js "$1" "$2-600.$EXT" "600px"
+
+  find . -name "$2-*.$EXT" | imageoptim -a
+}
+
 # Takes five responsive screenshots of a website for using with assignments
 function rwd-screens () {
-  phantomjs ~/bin/rasterize.js "$1" "$2-xs.png" "240px"
-  phantomjs ~/bin/rasterize.js "$1" "$2-s.png" "400px"
-  phantomjs ~/bin/rasterize.js "$1" "$2-m.png" "650px"
-  phantomjs ~/bin/rasterize.js "$1" "$2-l.png" "980px"
-  phantomjs ~/bin/rasterize.js "$1" "$2-xl.png" "1440px"
+  EXT=${3:-jpg}
 
-  find . -name "$2-*.png" | imageoptim -a
+  phantomjs ~/bin/rasterize.js "$1" "$2-xs.$EXT" "240px"
+  phantomjs ~/bin/rasterize.js "$1" "$2-s.$EXT" "400px"
+  phantomjs ~/bin/rasterize.js "$1" "$2-m.$EXT" "650px"
+  phantomjs ~/bin/rasterize.js "$1" "$2-l.$EXT" "980px"
+  phantomjs ~/bin/rasterize.js "$1" "$2-xl.$EXT" "1440px"
+
+  find . -name "$2-*.$EXT" | imageoptim -a
 }
 
 # Get separate function files
