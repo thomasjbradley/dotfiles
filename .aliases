@@ -79,7 +79,7 @@ alias npmrg="sudo npm uninstall -g"
 alias bfg="java -jar /db/bin/bfg-1.11.1.jar"
 
 # Brew fix local overwrite issues
-alias brewfix="cd `brew --prefix` && git reset --hard FETCH_HEAD && cd -"
+alias brewfix="cd `brew --prefix`; git fetch; git reset --hard origin/master; cd -"
 
 # For NodeWebkit
 alias nw="~/bin/node-webkit/node-webkit.app/Contents/MacOS/node-webkit"
