@@ -25,6 +25,7 @@
   undo = reset --soft HEAD~1
   r = rebase -i
   cp = cherry-pick
+  unstage = rm --cached
 
   # Pull in remote changes for the current repository and all its submodules
   pusm = !"git pull; git submodule foreach git pull origin master"
