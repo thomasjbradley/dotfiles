@@ -269,7 +269,7 @@ defaults write com.apple.dock mouse-over-hilte-stack -bool true
 defaults write com.apple.dock tilesize -int 36
 
 # Always show scrollbars
-defaults write NSGlobalDomain AppleShowScrollBars -string "Automatic"
+defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling"
 
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
