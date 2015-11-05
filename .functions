@@ -136,16 +136,22 @@ function mobile-screens () {
 
 # Takes five responsive screenshots of a website for using with assignments
 function rwd-screens () {
-  EXT=${3:-jpg}
-
-  phantomjs ~/bin/rasterize.js "$1" "$2-xs.$EXT" "240px"
-  phantomjs ~/bin/rasterize.js "$1" "$2-s.$EXT" "400px"
-  phantomjs ~/bin/rasterize.js "$1" "$2-m.$EXT" "650px"
-  phantomjs ~/bin/rasterize.js "$1" "$2-l.$EXT" "980px"
-  phantomjs ~/bin/rasterize.js "$1" "$2-xl.$EXT" "1440px"
-
-  find . -name "$2-*.$EXT" | imageoptim -a
+  slimerjs ~/bin/slimer-rasterize.js "$1"
+  # find . -maxdepth 1 -name "*.jpg" | imageoptim -a
 }
+
+# This function uses PhantomJs which isn’t working on my computer
+# function rwd-screens () {
+#   EXT=${3:-jpg}
+
+#   phantomjs ~/bin/rasterize.js "$1" "$2-xs.$EXT" "240px"
+#   phantomjs ~/bin/rasterize.js "$1" "$2-s.$EXT" "400px"
+#   phantomjs ~/bin/rasterize.js "$1" "$2-m.$EXT" "650px"
+#   phantomjs ~/bin/rasterize.js "$1" "$2-l.$EXT" "980px"
+#   phantomjs ~/bin/rasterize.js "$1" "$2-xl.$EXT" "1440px"
+
+#   find . -name "$2-*.$EXT" | imageoptim -a
+# }
 
 # Get separate function files
 source ~/.functions-browsers
