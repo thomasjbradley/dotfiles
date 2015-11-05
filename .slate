@@ -32,7 +32,7 @@ bind tab:${hyper} hint
 
 # Positioning
 bind =:${hyper} ${full}
-bind =:${shift-hyper} ${full-right}
+bind =:${shift-hyper} sequence ${centerY} > ${centerX}
 bind -:${hyper} sequence ${three-quarters} > ${centerX} > ${centerY}
 bind -:${shift-hyper} sequence ${three-quarters-full} > ${centerX}
 bind [:${hyper} ${left-half}
