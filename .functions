@@ -153,6 +153,17 @@ function rwd-screens () {
 #   find . -name "$2-*.$EXT" | imageoptim -a
 # }
 
+# This function copies all the default auto marking files into the current folder
+function auto-mark () {
+  cp -R /www/auto-marking-template/.tests .tests
+  cp /www/auto-marking-template/.editorconfig .editorconfig
+  cp /www/auto-marking-template/.gitignore .gitignore
+  cp /www/auto-marking-template/.htmlcsrc .htmlcsrc
+  cp /www/auto-marking-template/.stylelintrc .stylelintrc
+  cp /www/auto-marking-template/.travis.yml .travis.yml
+  cp /www/auto-marking-template/package.json package.json
+}
+
 # Get separate function files
 source ~/.functions-browsers
 source ~/.functions-browserstack
