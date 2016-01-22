@@ -155,12 +155,12 @@ function rwd-screens () {
 
 # This function copies all the default Markbot files into the current folder
 function markbot () {
-  cp -R /www/auto-marking-template/.markbot ./
-  cp /www/auto-marking-template/.editorconfig .editorconfig
-  cp /www/auto-marking-template/.gitignore .gitignore
-  cp /www/auto-marking-template/.markbot.yml .markbot.yml
-  cp /www/auto-marking-template/.travis.yml .travis.yml
-  cp /www/auto-marking-template/package.json package.json
+  cp -R /www/markbot/.markbot ./
+  cp /www/markbot/.editorconfig .editorconfig
+  cp /www/markbot/.gitignore .gitignore
+  cp /www/markbot/.markbot.yml .markbot.yml
+  cp /www/markbot/.travis.yml .travis.yml
+  cp /www/markbot/package.json package.json
 }
 
 # Get separate function files
