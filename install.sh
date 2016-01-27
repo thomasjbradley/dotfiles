@@ -35,3 +35,7 @@ cp ./keyremap-private.xml ~/Library/Application\ Support/KeyRemap4MacBook/privat
 # Sequel Pro favourites & settings
 ln -sfn /db/Preferences/Sequel\ Pro/com.sequelpro.SequelPro.plist com.sequelpro.SequelPro.plist
 ln -sfn /db/Preferences/Sequel\ Pro/Application\ Support/ Sequel\ Pro
+
+# Change login shell
+# https://matt.sh/fix-os-x-terminal-launch-speed
+chsh -s /usr/local/bin/bash
