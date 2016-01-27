@@ -24,8 +24,13 @@ export LANG="en_US"
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Finder Dock Mail Safari iTunes iCal Address\ Book SystemUIServer" killall
 
+# Switch to newer bash completion installed with Homebrew
+if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
+  . $(brew --prefix)/share/bash-completion/bash_completion
+fi
+
 # If possible, add tab completion for many more commands
-[ -f /etc/bash_completion ] && source /etc/bash_completion
+# [ -f /etc/bash_completion ] && source /etc/bash_completion
 
 # Setup Hub: https://github.com/defunkt/hub
 eval "$(hub alias -s)"
