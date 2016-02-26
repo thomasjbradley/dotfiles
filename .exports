@@ -21,3 +21,5 @@ export NODE_PATH=/usr/local/lib/node_modules:/usr/local/share/npm/lib/node_modul
 export DOCKER_HOST=tcp://127.0.0.1:4243
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+source ".exports-private"
