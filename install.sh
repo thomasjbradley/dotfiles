@@ -39,3 +39,5 @@ ln -sfn /db/Preferences/Sequel\ Pro/Application\ Support/ Sequel\ Pro
 # Change login shell
 # https://matt.sh/fix-os-x-terminal-launch-speed
 chsh -s /usr/local/bin/bash
+
+cp ./osx-env-sync.plist ~/Library/LaunchAgents/
