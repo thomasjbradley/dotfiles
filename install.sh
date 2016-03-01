@@ -11,6 +11,7 @@ exclude=(
   "keyremap-private.xml",
   "keyremap-user.xml",
   "vhost-setup.sh",
+  "osx-env-sync.plist",
   ".brew"
 )
 
