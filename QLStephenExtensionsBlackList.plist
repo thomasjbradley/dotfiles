@@ -54,6 +54,7 @@
   <string>rar</string>
   <string>pkg</string>
   <string>7z</string>
+  <string>gifcask</string>
   <!-- eBooks -->
   <string>epub</string>
   <string>mobi</string>
