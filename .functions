@@ -102,6 +102,12 @@ function server () {
   sudo python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port"
 }
 
+# Start a PHP web server from a directory, optionally specifying the port
+function phpserver () {
+  local port="${1:-8000}"
+  sudo php -S localhost:$port
+}
+
 # Generate an epub file form the CWD
 # Must pass a filename
 function epub() {
