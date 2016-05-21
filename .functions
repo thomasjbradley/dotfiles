@@ -105,7 +105,7 @@ function server () {
 # Start a PHP web server from a directory, optionally specifying the port
 function phpserver () {
   local port="${1:-8000}"
-  sudo php -S localhost:$port
+  sudo php -S 0.0.0.0:$port
 }
 
 # Generate an epub file form the CWD
