@@ -7,6 +7,7 @@ PATH=/db/bin:$PATH
 # PATH="$(brew --prefix josegonzalez/php/php55)/bin:$PATH"
 PATH="$(brew --prefix php55)/bin:$PATH"
 PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+PATH=~/.yarn/bin:$PATH
 
 export PATH
 
