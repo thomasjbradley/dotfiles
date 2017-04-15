@@ -165,6 +165,7 @@ function markbot () {
   cp -R /www/markbot-template/.gitignore .
   cp -R /www/markbot-template/.editorconfig .
   cp -R /www/markbot-template/README.md .
+  cp -R /www/markbot-template/README-starter.md .
 }
 
 # Get separate function files
