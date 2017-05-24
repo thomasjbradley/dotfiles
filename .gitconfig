@@ -36,7 +36,7 @@
   whitespace = fix
 
 [user]
-  name = Thomas J Bradley
+	name = Thomas J Bradley
 	email = hey@thomasjbradley.ca
 
 [difftool "Kaleidoscope"]

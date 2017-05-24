@@ -31,7 +31,7 @@ ln -sfn ~/Dropbox/tjb-dev /tjb-dev
 ln -sfn /Applications/MAMP/htdocs /mamp
 
 # Set up some special config files
-cp ./keyremap-private.xml ~/Library/Application\ Support/KeyRemap4MacBook/private.xml
+ln -sfn ~/dotfiles/.karabiner.json /Users/thomasjbradley/.config/karabiner/karabiner.json
 
 # Sequel Pro favourites & settings
 ln -sfn /db/Preferences/Sequel\ Pro/com.sequelpro.SequelPro.plist com.sequelpro.SequelPro.plist
