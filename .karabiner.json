@@ -1,10 +1,69 @@
 {
     "global": {
         "check_for_updates_on_startup": true,
-        "show_in_menu_bar": true
+        "show_in_menu_bar": true,
+        "show_profile_name_in_menu_bar": false
     },
     "profiles": [
         {
+            "complex_modifications": {
+                "parameters": {
+                    "basic.to_if_alone_timeout_milliseconds": 500
+                },
+                "rules": [
+                    {
+                        "description": "Change caps_lock to left_control; send escape if pressed alone",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_control"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "escape"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Change left_control to command+control+option",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_control",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_control",
+                                        "modifiers": [
+                                            "left_command",
+                                            "left_option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    }
+                ]
+            },
             "devices": [],
             "fn_function_keys": {
                 "f1": "display_brightness_decrement",
@@ -20,21 +79,9 @@
                 "f8": "play_or_pause",
                 "f9": "fastforward"
             },
-            "name": "Default profile",
-            "one_to_many_mappings": {
-                "left_control": [
-                    "left_control",
-                    "left_option",
-                    "left_command"
-                ]
-            },
+            "name": "Thomas’s profile",
             "selected": true,
-            "simple_modifications": {
-                "caps_lock": "left_control"
-            },
-            "standalone_keys": {
-                "caps_lock": "escape"
-            },
+            "simple_modifications": {},
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,
                 "keyboard_type": "ansi",
