@@ -24,11 +24,11 @@ do
 done
 
 # Set up some commonly used aliases
-ln -sfn ~/Desktop /ds
-ln -sfn ~/Dropbox /db
-ln -sfn ~/Dropbox/www /www
-ln -sfn ~/Dropbox/tjb-dev /tjb-dev
-ln -sfn /Applications/MAMP/htdocs /mamp
+sudo ln -sfn ~/Desktop /ds
+sudo ln -sfn ~/Dropbox /db
+sudo ln -sfn ~/Dropbox/www /www
+sudo ln -sfn ~/Dropbox/tjb-dev /tjb-dev
+sudo ln -sfn /Applications/MAMP/htdocs /mamp
 
 # Set up some special config files
 ln -sfn ~/dotfiles/.karabiner.json /Users/thomasjbradley/.config/karabiner/karabiner.json
