@@ -161,12 +161,7 @@ function rwd-screens () {
 
 # This function copies all the default Markbot files into the current folder
 function markbot () {
-  cp -R /www/markbot-template/.markbot.yml .
-  cp -R /www/markbot-template/.gitignore .
-  cp -R /www/markbot-template/.editorconfig .
-  cp -R /www/markbot-template/README-exercise.md .
-  cp -R /www/markbot-template/README-lesson.md .
-  cp -R /www/markbot-template/README-activity-download.md .
+  cp -R /www/markbot-template/. .
 }
 
 # Get separate function files
