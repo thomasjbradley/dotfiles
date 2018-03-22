@@ -12,6 +12,7 @@ alias ip="curl icanhazip.com"
 # Shortcuts
 alias g="git"
 alias h="hg"
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias s="subl"
 alias o="open"
 alias oo="open ."
