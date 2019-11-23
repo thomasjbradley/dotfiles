@@ -28,7 +28,12 @@ sudo ln -sfn ~/Desktop /ds
 sudo ln -sfn ~/Dropbox /db
 sudo ln -sfn ~/Dropbox/www /www
 sudo ln -sfn ~/Dropbox/tjb-dev /tjb-dev
-sudo ln -sfn /Applications/MAMP/htdocs /mamp
+sudo ln -sfn ~/Dropbox/Preferences/Sublime\ Text\ 3/ ~/Library/Application\ Support/Sublime\ Text\ 3
+# For MacOS Catalina
+echo -e 'ds\tUsers/thomasjbradley/Desktop' | sudo tee -a /etc/synthetic.conf
+echo -e 'db\tUsers/thomasjbradley/Dropbox' | sudo tee -a /etc/synthetic.conf
+echo -e 'www\tUsers/thomasjbradley/Dropbox/www' | sudo tee -a /etc/synthetic.conf
+echo -e 'tjb-dev\tUsers/thomasjbradley/Dropbox/tjb-dev' | sudo tee -a /etc/synthetic.conf
 
 # Set up some special config files
 ln -sfn ~/dotfiles/.karabiner.json /Users/thomasjbradley/.config/karabiner/karabiner.json
