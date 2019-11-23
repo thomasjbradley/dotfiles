@@ -168,3 +168,7 @@ fi
 ###-end-npm-completion-###
 
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+eval "$(pipenv --completion)"
+
+eval "$(rbenv init -)"
