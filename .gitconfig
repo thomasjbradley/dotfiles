@@ -65,6 +65,7 @@
   excludesfile = ~/.gitignore
   quotepath = false
   attributesfile = ~/.gitattributes
+	editor = code --wait
 
 [help]
   autocorrect = 1

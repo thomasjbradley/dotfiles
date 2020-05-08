@@ -18,6 +18,10 @@ alias s="subl"
 alias o="open"
 alias oo="open ."
 
+alias vs="code ."
+# So I don’t accidentally open Sublime Text
+alias ss="code ."
+
 # List all files colorized in long format, including dot files
 alias l="ls -Gla"
 
