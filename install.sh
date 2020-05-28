@@ -39,10 +39,6 @@ echo -e 'tjb-dev\tUsers/thomasjbradley/Dropbox/tjb-dev' | sudo tee -a /etc/synth
 # Set up some special config files
 ln -sfn ~/dotfiles/.karabiner.json /Users/thomasjbradley/.config/karabiner/karabiner.json
 
-# Sequel Pro favourites & settings
-ln -sfn /db/Preferences/Sequel\ Pro/com.sequelpro.SequelPro.plist com.sequelpro.SequelPro.plist
-ln -sfn /db/Preferences/Sequel\ Pro/Application\ Support/ Sequel\ Pro
-
 # Fix some QLStephen preview problems
 cp ./QLStephenExtensionsBlackList.plist /Users/thomasjbradley/Library/QuickLook/QLStephen.qlgenerator/Contents/Resources/
 qlmanage -r
