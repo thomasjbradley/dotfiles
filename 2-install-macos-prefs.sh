@@ -13,10 +13,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-scutil --set ComputerName "chalkboard"
-scutil --set HostName "chalkboard"
-scutil --set LocalHostName "chalkboard"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "chalkboard"
+scutil --set ComputerName "aluminum-falcon"
+scutil --set HostName "aluminum-falcon"
+scutil --set LocalHostName "aluminum-falcon"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "aluminum-falcon"
 
 # Menu bar: disable transparency
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
