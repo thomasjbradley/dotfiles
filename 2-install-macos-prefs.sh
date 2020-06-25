@@ -271,7 +271,10 @@ defaults write com.apple.dock mouse-over-hilte-stack -bool true
 defaults write com.apple.dock tilesize -int 36
 
 # Prevent resizing of the Dock
-defaults write com.apple.Dock size-immutable -bool yes
+defaults write com.apple.Dock size-immutable -bool true
+
+# Prevent Dock from being changed
+defaults write com.apple.Dock contents-immutable -bool true
 
 # Always show scrollbars
 defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling"
