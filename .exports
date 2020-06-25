@@ -9,6 +9,7 @@ PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 PATH=~/.composer/vendor/bin:$PATH
 PATH=/usr/local/opt/go/libexec/bin:$PATH
 PATH=/usr/local/opt/python/libexec/bin:$PATH
+PATH=/usr/local/opt/openjdk/bin:$PATH
 PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH
 
 export PATH
