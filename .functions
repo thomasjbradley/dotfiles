@@ -184,4 +184,3 @@ function markbot () {
 
 # Get separate function files
 source ~/.functions-browsers
-source ~/.functions-browserstack

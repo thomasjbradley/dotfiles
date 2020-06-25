@@ -28,33 +28,24 @@ export LANG="en_US"
 complete -o "nospace" -W "Finder Dock Mail Safari iTunes iCal Address\ Book SystemUIServer" killall
 
 # Switch to newer bash completion installed with Homebrew
-if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
-  . $(brew --prefix)/share/bash-completion/bash_completion
-fi
-
-# If possible, add tab completion for many more commands
-# [ -f /etc/bash_completion ] && source /etc/bash_completion
-
-# Setup Hub: https://github.com/defunkt/hub
-eval "$(hub alias -s)"
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 # Set up Vi key bindings
 set -o vi
 
 # Setup tab completions for homebrew
 # brew install bash-completion
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
+if type brew &>/dev/null; then
+  HOMEBREW_PREFIX="$(brew --prefix)"
+  if [[ -r "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh" ]]; then
+    source "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh"
+  else
+    for COMPLETION in "${HOMEBREW_PREFIX}/etc/bash_completion.d/"*; do
+      [[ -r "$COMPLETION" ]] && source "$COMPLETION"
+    done
+  fi
 fi
 
-# {{{
-# Node Completion - Auto-generated, do not touch.
-shopt -s progcomp
-for f in $(command ls ~/.node-completion); do
-  f="$HOME/.node-completion/$f"
-  test -f "$f" && . "$f"
-done
-# }}}
 
 # Set up git completions
 if [ -f ~/dotfiles/.git-completion ]; then
@@ -68,9 +59,6 @@ if [ $? -eq 0 ]; then
     git diff --no-index --color-words "$@"
   }
 fi
-
-# Set up grunt completions
-eval "$(grunt --completion=bash)"
 
 # Set up direnv - directory custom env vars
 eval "$(direnv hook bash)"
@@ -172,5 +160,3 @@ eval "$(pipenv --completion)"
 eval "$(rbenv init -)"
 
 eval "$(pyenv init -)"
-
-source /Users/thomasjbradley/Library/Preferences/org.dystroy.broot/launcher/bash/br
