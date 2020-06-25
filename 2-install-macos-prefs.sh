@@ -270,6 +270,9 @@ defaults write com.apple.dock mouse-over-hilte-stack -bool true
 # Set the icon size of Dock items to 36 pixels
 defaults write com.apple.dock tilesize -int 36
 
+# Prevent resizing of the Dock
+defaults write com.apple.Dock size-immutable -bool yes
+
 # Always show scrollbars
 defaults write NSGlobalDomain AppleShowScrollBars -string "WhenScrolling"
 
