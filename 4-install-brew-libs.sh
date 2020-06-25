@@ -1,6 +1,7 @@
 libs=(
   git
   node
+  make
   rename
   tree
   direnv
