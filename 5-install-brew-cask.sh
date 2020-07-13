@@ -25,6 +25,7 @@ apps=(
   gitify
   dash
   malwarebytes
+  handbrake
 
   # Browsers
   firefox-developer-edition
