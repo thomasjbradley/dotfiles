@@ -12,6 +12,7 @@ libs=(
   bash-completion@2
   open-completion
   brew-cask-completion
+  rsync
 )
 echo "installing libs..."
 brew install ${libs[@]}
