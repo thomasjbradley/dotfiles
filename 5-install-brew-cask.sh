@@ -44,6 +44,8 @@ apps=(
   kaleidoscope
   cyberduck
   ngrok
+  sim-daltonism
+  marta
 
   # QuickLook plugins
   betterzipql

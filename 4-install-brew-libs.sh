@@ -13,6 +13,7 @@ libs=(
   open-completion
   brew-cask-completion
   rsync
+  hledger
 )
 echo "installing libs..."
 brew install ${libs[@]}

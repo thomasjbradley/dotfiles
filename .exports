@@ -28,4 +28,6 @@ export DOCKER_HOST=tcp://127.0.0.1:4243
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export HOMEBREW_NO_ANALYTICS=1
 
+export LEDGER_FILE=/db/Finance/2719967-inc/2020.journal
+
 source ~/.exports-private
