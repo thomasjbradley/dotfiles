@@ -19,6 +19,7 @@ done
 
 # Set up some commonly used aliases
 sudo ln -sfn ~/Desktop /ds
+sudo ln -sfn ~/Downloads /dl
 sudo ln -sfn ~/Dropbox /db
 sudo ln -sfn ~/Dropbox/www /www
 sudo ln -sfn ~/Dropbox/tjb-dev /tjb-dev
@@ -26,6 +27,7 @@ sudo ln -sfn ~/Dropbox/learn-the-web /ltw
 
 # For MacOS Catalina
 echo -e 'ds\tUsers/thomasjbradley/Desktop' | sudo tee -a /etc/synthetic.conf
+echo -e 'dl\tUsers/thomasjbradley/Downloads' | sudo tee -a /etc/synthetic.conf
 echo -e 'db\tUsers/thomasjbradley/Dropbox' | sudo tee -a /etc/synthetic.conf
 echo -e 'www\tUsers/thomasjbradley/Dropbox/www' | sudo tee -a /etc/synthetic.conf
 echo -e 'tjb-dev\tUsers/thomasjbradley/Dropbox/tjb-dev' | sudo tee -a /etc/synthetic.conf
