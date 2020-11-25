@@ -1,17 +1,16 @@
 export EDITOR='subl -w'
 
-PATH=~/.rbenv/shims:$PATH
 PATH=/usr/local/share/npm/bin:$PATH
 PATH=/usr/local/sbin:$PATH
 PATH=/usr/local/bin:$PATH
 PATH=/db/bin:$PATH
 PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 PATH="$(brew --prefix make)/libexec/gnubin:$PATH"
-PATH=~/.composer/vendor/bin:$PATH
 PATH=/usr/local/opt/go/libexec/bin:$PATH
 PATH=/usr/local/opt/python/libexec/bin:$PATH
 PATH=/usr/local/opt/openjdk/bin:$PATH
 PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH
+PATH=~/.composer/vendor/bin:$PATH
 
 export PATH
 
