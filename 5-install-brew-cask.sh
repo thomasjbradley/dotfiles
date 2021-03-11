@@ -46,6 +46,7 @@ apps=(
   ngrok
   sim-daltonism
   marta
+  insomnia
 
   # QuickLook plugins
   betterzipql
