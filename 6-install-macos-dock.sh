@@ -12,6 +12,7 @@ dockutil --add '/Applications/Safari.app' --no-restart
 dockutil --add '/Applications/GitUp.app' --no-restart
 dockutil --add '/Applications/Visual Studio Code.app' --no-restart
 dockutil --add '/Applications/TablePlus.app' --no-restart
+dockutil --add '/Applications/pgAdmin 4.app' --no-restart
 dockutil --add '/Applications/Kaleidoscope.app' --no-restart
 dockutil --add '' --type spacer --section apps --no-restart
 dockutil --add '/Applications/IA Writer Classic.app' --no-restart
