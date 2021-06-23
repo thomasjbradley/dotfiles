@@ -15,6 +15,10 @@ apps=(
   alfred
   bartender
   onyx
+  iina
+  keyboardcleantool
+  netspot
+  soundsource
 
   # Apps
   appcleaner
@@ -26,12 +30,23 @@ apps=(
   dash
   malwarebytes
   handbrake
+  clementine
+  kid3
+  gimp
+  inkscape
+  libreoffice
+  scribus
+  shrinkit
+  obs
+  obsidian
+  transmission
 
   # Browsers
   firefox-developer-edition
   microsoft-edge
   opera
   google-chrome
+  brave-browser
 
   # Dev tools
   gitup
@@ -47,6 +62,9 @@ apps=(
   sim-daltonism
   marta
   insomnia
+
+  # Plugins
+  mailtrackerblocker
 
   # QuickLook plugins
   betterzipql
