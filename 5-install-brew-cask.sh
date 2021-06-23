@@ -6,7 +6,7 @@ apps=(
   keka
   little-snitch
   micro-snitch
-  slate
+  hammerspoon
   flux
   shortcat
   contexts
@@ -60,4 +60,4 @@ apps=(
   webp-quicklook
 )
 echo "installing apps..."
-brew cask install ${apps[@]}
+brew install ${apps[@]}
