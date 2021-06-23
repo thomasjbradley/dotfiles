@@ -12,7 +12,12 @@ PATH=/usr/local/opt/openjdk/bin:$PATH
 PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH
 PATH=~/.composer/vendor/bin:$PATH
 
+PYENV_ROOT="$HOME/.pyenv"
+PATH="$PYENV_ROOT/.shims:$PYENV_ROOT/bin:$PATH"
+
 export PATH
+
+export PYENV_ROOT
 
 export CDPATH=".:/www:/ds"
 
@@ -27,6 +32,7 @@ export DOCKER_HOST=tcp://127.0.0.1:4243
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export HOMEBREW_NO_ANALYTICS=1
 
-export LEDGER_FILE=/db/Finance/2719967-inc/2020.journal
+# Specifically for Markbot’s out-dated requirements
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
 
 source ~/.exports-private

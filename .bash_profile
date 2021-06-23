@@ -46,7 +46,6 @@ if type brew &>/dev/null; then
   fi
 fi
 
-
 # Set up git completions
 if [ -f ~/dotfiles/.git-completion ]; then
   . ~/dotfiles/.git-completion
@@ -159,4 +158,5 @@ eval "$(pipenv --completion)"
 
 eval "$(rbenv init -)"
 
+eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
